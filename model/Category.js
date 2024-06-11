@@ -15,7 +15,7 @@ virtual.get(function(){
 
 
 
-.set('toJSON',{
+categorySchema.set('toJSON',{
     virtuals:true,
     versionKey:false,
     transform:function(doc,ret){delete ret._id}

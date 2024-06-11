@@ -15,11 +15,11 @@ virtual.get(function(){
 
 
 
-.set('toJSON',{
+brandSchema.set('toJSON',{
     virtuals:true,
     versionKey:false,
     transform:function(doc,ret){delete ret._id}
 
 })
 
-exports.Brand = mongoose.model('brand', brandSchema)
+exports.Brand = mongoose.model('Brand', brandSchema)
